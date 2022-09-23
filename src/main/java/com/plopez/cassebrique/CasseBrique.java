@@ -52,7 +52,12 @@ public class CasseBrique extends Canvas {
             dessin.setColor(Color.RED);
             dessin.fillOval(xBalle,250,30,30);
 
-            if (int indexFrame = 0)
+            if(xBalle == 0){
+                vitesseHorizonaleBalle = 2;
+            }
+            if(xBalle == 500){
+                vitesseHorizonaleBalle = -2;
+            }
 
             //---------------------------------------------
             dessin.dispose();
